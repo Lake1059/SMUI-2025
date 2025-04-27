@@ -14,7 +14,7 @@ Public Class 界面控制
             Case 上下文菜单显示位置.右对齐在下方显示
                 m.Show(c, c.Width - m.Width, c.Height - 2)
             Case 上下文菜单显示位置.左对齐在上方显示
-                m.Show(c, e.Location.X, e.Location.Y - m.Height)
+                m.Show(c, 0, 0 - m.Height + 2)
             Case 上下文菜单显示位置.右对齐在上方显示
                 m.Show(c, e.Location.X + c.Width - m.Width, e.Location.Y - m.Height)
         End Select
